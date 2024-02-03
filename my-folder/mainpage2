@@ -1,0 +1,144 @@
+<!--Code adapted from W3schools.com-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" herf="../static/xxx.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 2px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button font-format">University of Warwick Resturants Guide</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Resturants</a>
+      <a href="#contact" class="w3-bar-item w3-button">Reservation</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+  <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium" onclick="document.getElementById('download').style.display='block'">Reserve Now <i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button>
+  <div class="mySlides w3-animate-opacity">
+    <img class="w3-image" src="/images/Benugo5.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+      <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">University of Warwick</h1>
+        <h2 class="w3-xlarge">Michelin Guide</h2>
+        <hr class="w3-opacity">
+        <p>Discover and book restaurants selected by the MICHELIN Guide in the Univeristy of Warwick campus</p>
+        <p><button class="w3-button w3-block w3-white w3-round" onclick="document.getElementById('download').style.display='block'">Search and Reserve<i class="fa fa-android"></i> <i class="fa fa-apple"></i> <i class="fa fa-windows"></i></button></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Modal -->
+<div id="download" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('download').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+      <h2 class="w3-middle">Please Join the Warwick MICHELIN Guide Community First,</h2>
+      <p>To sign in or create a free account, please follow the steps below:<p>
+      <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter First Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter Last Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter E-mail"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter Password"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('download').style.display='none'">Congratualtions! Let's Get Started!</button>
+    </div>
+  </div>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="/images/uow3.jpg" class="w3-round w3-image w3-opacity-min" alt="Arts Building" width="700" height="800">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">University of Warwick Michelin Guide</h1><br>
+      <h5 class="w3-center">About Us</h5>
+      <p class="w3-large">The University of Warwick Michelin Guide provides students and faculty with essential campus dining insights, enriching their culinary experiences with detailed reviews and recommendations, ensuring they discover delightful eateries to suit their tastes and preference.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">With detailed reviews, ratings, and recommendations, the guide elevates the campus dining experience, highlighting exceptional eateries while catering to diverse tastes and preferences. From cozy cafes to elegant dining establishments, the University of Warwick Michelin Guide curates an array of dining experiences, enriching campus life and fostering a vibrant culinary culture.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Resturants & Café</h1><br>
+      
+      <h4>Benugo Bar & Kitchen</h4>
+      <p class="w3-text-grey">Serving<span class="w3-tag w3-light-grey">Carbon Neutral</span>coffee and impeccably sourced, delicious food.</p>
+      <p class="w3-text-grey">Warwick Arts Center</p><br>
+
+      <h4>The Dirty Duck</h4>
+      <p class="w3-text-grey">Serving up a delicious <span class="w3-tag w3-light-grey">All-Day</span> menu for freshly prepared food alongside guest ales.</p>
+      <p class="w3-text-grey">SU Buildings</p><br>
+
+      <h4>Aroma</h4>
+      <p class="w3-text-grey">Provides<span class="w3-tag w3-light-grey">High Quality</span>, ethically sourced coffee and food available.</p>
+      <p class="w3-text-grey">Westwood Campus</p><br>
+
+      <h4>Naic Café</h4>
+      <p class="w3-text-grey">Barista coffee, great <span class="w3-tag w3-light-grey">Mexican Food</span> and contemporary design.</p>
+      <p class="w3-text-grey"> Lord Bhattacharyya Building</p><br>
+    
+      <h4>Café Nero</h4>
+      <p class="w3-text-grey">Serving<span class="w3-tag w3-light-grey">Award-winning Italian </span> coffee with hot and cold food available.</p>
+      <p class="w3-text-grey">Faculty of Arts</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="/images/Benugo4.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Reservation</h1><br>
+    <p>Secure your dining experience hassle-free by reserving your table at our esteemed restaurants today. Enjoy exquisite cuisine and impeccable service while creating unforgettable memories with friends and family. Book now!</p>
+    <p class="w3-text-blue-grey w3-large"><b>University of Warwick, Coventry CV4 7AL, UK</b></p>
+    <p>You can also contact us by phone 00553123-2323 or email catering@warwickmichelin.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Resturants" required name="Resturants"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
